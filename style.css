@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px; 
+}
+
+h1{
+    font-size: 50px;
+}
+
+header{
+    background-color: #13c6dd;
+    color: white;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.textbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+form{
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 15px 0 #3263cd;
+    border-radius: 8px;
+
+}
+input, textarea{
+    padding: 5px;
+    width: calc(100% - 10px);
+
+}
+select{
+    width: 100%;
+    padding: 7px 0;
+
+}
+input,select,textarea{
+    margin-bottom: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+input[type=radio], input[type=checkbox] {
+    width: auto;
+}
+
+.button {
+    margin-top: 10px;
+    /* text-align: center; */
+}
+button {
+    width: 10%;
+    padding: 10px;
+    background-color:  #3263cd;
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+/* меняем цвет текста при наведении курсора */
+.item:hover p, .item:hover input, .quastion:hover p,
+ input:hover::placeholder, .quastion label:hover{
+    color: #3263cd;
+}
+button:hover{
+    background-color:#5b82d7 ;
+}

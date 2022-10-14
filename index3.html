@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style3.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="#" class="myForm">
+      <div class="row">
+        <div class="column">
+          <div class="input_row">
+            <label for="customer_name">Name <span>*</span></label>
+            <input type="text" name="name" id="customer_name" />
+          </div>
+          <div class="input_row">
+            <label for="customer_phone">Phone</label>
+            <input type="text" name="Phone" id="customer_phone" />
+          </div>
+          <div class="input_row">
+            <label for="customer_email">Email</label>
+            <input type="text" name="Email" id="customer_email" />
+          </div>
+          <div class="input_row">
+            <label for="pickup_time">Pickup Date/Time</label>
+            <input type="datetime-local" name="pickup" id="pickup_time" />
+          </div>
+          <div class="input_row">
+            <label for="pickup_place">Pickup_place</label>
+            <select name="place" id="pickup_place">
+              <option value="">Select One</option>
+              <option value="taxi">Taxi office</option>
+              <option value="town">Town holl</option>
+              <option value="guess">Well</option>
+            </select>
+          </div>
+          <div class="input_row">
+            <label for="dropoff_place">Dropoff Place</label>
+            <input type="text" name="dropoff_place" id="dropoff_place" />
+          </div>
+        </div>
+        <div class="column">
+          <fieldset class="taxi">
+            <legend>Which taxi do you require?</legend>
+            <label> <input type="radio" value="car" name="taxi" />Car</label>
+            <label> <input type="radio" value="van" name="taxi" />Van</label>
+            <label>
+              <input type="radio" value="tuk tuk" name="taxi" />Tuk tuk</label
+            >
+          </fieldset>
+          <fieldset class="extras">
+            <legend>Extras</legend>
+            <label>
+              <input type="checkbox" value="baby_seat" name="baby_seat" />Baby
+              Seat</label
+            >
+            <label>
+              <input
+                type="checkbox"
+                value="wheelchair"
+                name="wheelchair"
+              />Wheelchair access</label
+            >
+            <label>
+              <input type="checkbox" value="stock_tip" name="stock_tip" />Stock
+              Tip</label
+            >
+          </fieldset>
+        </div>
+      </div>
+      <div class="row">
+        <button type="submit">Submit Booking</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border-radius: 3px;
+    padding: 1em;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+
+}
+.input_row{
+    display: flex;
+}
+.input_row label{
+    padding: 0.3em 0;
+    margin-right: 0.3em;
+
+}
+input, select{
+    padding:  0.5em;
+    margin-bottom: 1em;
+    flex: 6;
+}
+fieldset{
+    border: 0;
+
+}
+.taxi label, .extras label{
+    display: block;
+}
+button{
+    background-color: gray;
+    color: white;
+    border: 0;
+    padding: 1em;
+
+}
+legend{
+    margin-bottom: 0.4em;
+}
+span{
+    color: brown;
+}
